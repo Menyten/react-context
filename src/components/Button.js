@@ -4,7 +4,7 @@ import ColorContext from '../context/ColorContext';
 
 const Button = () => {
 
-  const renderSubmit = value => value === 'eng' ? 'Submit' : 'Skicka';
+  const renderSubmit = ({ language }) => language === 'eng' ? 'Submit' : 'Skicka';
 
   const renderButton = color => (
     <button className={`ui ${color} button`}>
